@@ -1,4 +1,6 @@
 import javax.swing.JLabel;
+import java.awt.Font;
+
 
 public class KeyLabel extends JLabel
 {
@@ -6,6 +8,5 @@ public class KeyLabel extends JLabel
     {
         this.setFont(new Font("MV Boli", Font.PLAIN, 28));
         this.setText("(N/A)");
-    }
     }
 }
