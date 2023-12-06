@@ -1,15 +1,19 @@
+import java.awt.FlowLayout;
 import javax.swing.JFrame;
 
 public class NewFrame extends JFrame
 {
     //New Frame Constructor
-    public NewFrame()
+    public NewFrame(String text)
     {
-        this.setVisible(true);
-        this.setLayout(new FlowLayout());
-        this.setSize(600, 360);
-        this.setResizable(false);
+        this.setTitle(text);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.pack();
+        this.setLayout(new FlowLayout());
+        //this.setBounds(600, 500, 900, 900);
+        this.setSize(900, 600);
+        this.setResizable(true);
+        
+        //this.pack();
+        this.setVisible(true);
     }
 }
